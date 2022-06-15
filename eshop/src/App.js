@@ -1,27 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Home from './pages';
-import About from './pages/about';
-import Services from './pages/services';
-import Contact from './pages/contact-us';
-import SignUp from './pages/sign-up';
-import SignIn from './pages/signin';
+import Navbar from './components/NavBar';
+import ItemListContainer from './components/ItemListContainer';
 
-function App() {
+const App = () => {
+  const name = null;
+  const isNameShowing = true;
+  
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path='/' exact element={<Home/>} />
-        <Route path='/about' element={<About/>} />
-        <Route path='/services' element={<Services/>} />
-        <Route path='/contact-us' element={<Contact/>} />
-        <Route path='/sign-up' element={<SignUp/>} />
-        <Route path='/signin' element={<SignIn/>} />
-      </Routes>
-    </Router>
+    <div className="App">
+      <Navbar/>
+      <ItemListContainer greeting='Hola soy Item List Container'/>
+    </div>
   );
 }
 
