@@ -1,15 +1,14 @@
-import './App.css';
 import Navbar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
+import Counter from './components/ItemCount';
 
 const App = () => {
-  const name = null;
-  const isNameShowing = true;
   
   return (
     <div className="App">
       <Navbar/>
       <ItemListContainer greeting='Hola soy Item List Container'/>
+      <Counter/>
     </div>
   );
 }
