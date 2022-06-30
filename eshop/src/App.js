@@ -1,14 +1,11 @@
-import Navbar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
-import Counter from './components/ItemCount';
+import React from 'react';
+import Home from './pages/Home';
 
 const App = () => {
   
   return (
     <div className="App">
-      <Navbar/>
-      <ItemListContainer greeting='Hola soy Item List Container'/>
-      <Counter/>
+      <Home/>
     </div>
   );
 }
