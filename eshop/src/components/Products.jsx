@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { mainProducts } from '../data'
 import Product from './Product'
@@ -11,16 +11,6 @@ const Container =styled.div`
 `
 
 const Products = () => {
-        const[item, setItem] = useState([])
-        useEffect(()=>{
-            consumeDataProducto()
-        },[])
-
-        const consumeDataProducto = async() =>{
-            const data = await fetch("../data.js")
-            const dataJson = await data.json()
-            setItem(dataJson)
-        }
   return (
     <Container>
         {mainProducts.map(item=>(

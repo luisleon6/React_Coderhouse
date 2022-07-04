@@ -97,11 +97,11 @@ export const mainProducts =[
         desc:"lorem ipsum dolor sit amet",
         price:"$189.00 kg"
     },
-    {
+    /*{
         id: 9,
         img:"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.stiltonbutchers.co.uk%2Fapp%2Fuploads%2F2020%2F05%2FPork_belly_8e54f280-3c6e-4f65-a0fc-047e2f35fafa-scaled.jpg&f=1&nofb=1",
         tilte:"Panceta de cerdo",
         desc:"Lorem ipsum dolor sit amet",
         price:"$155.00 kg"
-    }
+    }*/
 ]
